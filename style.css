@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+:root{
+    --cor-principal: #1e1e1e;
+    --cor-secundaria: #2c2c2c;
+    --cor-texto: #ffffff;
+    --cor-botoes: #007acc;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    color: var(--cor-texto);    
+    text-align: center;
+    background-color: var(--cor-secundaria);    
+}
+
+header div#descricaoPortifolio{
+    background-color: red;
+}
+
+header div#tituloHeader{
+    padding: 50px;
+}
+
+nav{
+    background-color: var(--cor-secundaria);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 570px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    
+}
+
+nav > a{
+    padding: 10px;   
+    text-decoration: none;
+    color: var(--cor-texto);
+     
+}
+
+nav > a:hover{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    transition-duration: 0.5s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.500);
+}
+
+a:visited{
+    color: var(--cor-texto);
+}
+
+body{   
+    background-color: var(--cor-principal);
+}
+
+main{
+    min-height: 1000px;
+    max-width: 1000px;
+    margin: auto;    
+    padding: 15px;
+    background-color: var(--cor-secundaria);    
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.500);
+    color: var(--cor-texto);
+    border-radius: 10px;
+
+}
+
+footer{
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    color: var(--cor-texto);
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    
+}
