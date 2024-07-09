@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../!midia/favicon.ico" type="image/x-icon">
+    <title>Exercicio 02</title>
+</head>
+<body>
+    <main>
+        <h1>Desafio 02: <br>Faça um programa que leia o nome de uma pessoa e mostre uma mensagem de boas-vidas.</h1>
+
+        <p>
+            <!-- Solicitando o nome do usuario em uma caixa de texto -->
+            Digite seu nome: 
+            <input type="text" name="nomePessoa" id="nomePessoa">
+
+            <!-- Botão de confirmação que irá executar uma função -->
+            <input type="button" value="OK" onclick="exibirMSG()">
+
+            <!-- Limpando mensagem e caixa de texto -->
+            <input type="button" value="LIMPAR" onclick="limparMSG()">
+
+            <!-- Criando uma tag 'h3' para a mensagem na função -->
+            <h3 id="resposta"></h3> 
+        
+            <script>            
+                // Variaveis que irão receber o nome do usuario inserido na caixa de texto e mensagem a ser inserida na função 
+                var nomePessoa = document.getElementById('nomePessoa')
+                var resposta = document.getElementById('resposta')
+
+                // Função que irá exibir uma mensagem de boas vindas
+                function exibirMSG(){
+                    // Valor inserido na variavel referente a caixa de texto
+                    var nome = nomePessoa.value
+
+                    // Anexando uma mensagem a variavel referente a tag 'h3'
+                    resposta.innerHTML = `Olá ${nome}!, Bem vindo(a) ao JavaScript!`
+                }
+                
+                // Limpando mensagem abaixo da caixa de texto
+                function limparMSG(){
+                    resposta.innerHTML = null                    
+                }
+            </script>
+        </p>
+
+    </main>     
+</body>
+</html>

@@ -14,24 +14,25 @@
 
 header{
     color: var(--cor-texto);    
-    text-align: center;
-    background-color: var(--cor-secundaria);    
+    text-align: center;        
 }
 
 header div#descricaoPortifolio{
     background-color: red;
 }
 
-header div#tituloHeader{
-    padding: 50px;
+#banner{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
+
 
 nav{
     background-color: var(--cor-secundaria);
     padding: 10px;
     border-radius: 5px;
     text-align: center;
-    margin: 570px;
+    margin: 457px;
     margin-top: 10px;
     margin-bottom: 15px;
     
@@ -49,7 +50,7 @@ nav > a:hover{
     color: var(--cor-texto);
     transition-duration: 0.5s;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.500);
+    box-shadow: 0px 0px 10px  rgb(18, 75, 110);
 }
 
 a:visited{
@@ -66,10 +67,18 @@ main{
     margin: auto;    
     padding: 15px;
     background-color: var(--cor-secundaria);    
-    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.500);
+    box-shadow: 0px 0px 10px rgb(18, 75, 110);
     color: var(--cor-texto);
     border-radius: 10px;
 
+}
+
+#source{
+    font-style: italic;
+}
+
+ol{
+    padding: 15px;
 }
 
 footer{
