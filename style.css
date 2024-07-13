@@ -1,10 +1,20 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root{
+    
+    /* Cores */
     --cor-principal: #1e1e1e;
     --cor-secundaria: #2c2c2c;
     --cor-texto: #ffffff;
     --cor-botoes: #007acc;
+
+    /* Fontes */
+
+    --fonte-principal: 'Montserrat'
+
+
 }
 
 *{
@@ -19,6 +29,7 @@ header{
 
 header div#descricaoPortifolio{
     background-color: red;
+    font-family: var(--fonte-principal), sans-serif;
 }
 
 #banner{
@@ -35,6 +46,7 @@ nav{
     margin: 457px;
     margin-top: 10px;
     margin-bottom: 15px;
+    font-family: var(--fonte-principal), sans-serif;
     
 }
 
@@ -70,6 +82,7 @@ main{
     box-shadow: 0px 0px 10px rgb(18, 75, 110);
     color: var(--cor-texto);
     border-radius: 10px;
+    font-family: var(--fonte-principal), sans-serif;
 
 }
 
