@@ -96,7 +96,7 @@ body{
 }
 
 main{
-    min-height: 5000px;
+    min-height: auto;
     max-width: 900px;
     margin: auto;    
     padding: 15px;
@@ -120,11 +120,15 @@ article{
 }
 
 article p{
-    text-align: justify;
+    text-align: justify;    
 }
 
 article img{
     border-radius: 5px;
+}
+
+article a{
+    text-decoration: none;
 }
 
 #source{
